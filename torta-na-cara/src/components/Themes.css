@@ -1,0 +1,111 @@
+#select-theme h2 {
+    margin-top: 7%;
+    text-align: center;
+    font-size: 28px;
+}
+
+#select-theme span {
+    color: #FF0072;
+    font-weight: 500;
+}
+
+#themes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#themes-container > div {
+    padding-top: 40px;
+    font-size: 22px;
+    flex-basis: 16vw;
+    margin-top: 2%;
+    text-align: center;
+    height: 350px;
+    background-color: #2536a1;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#themes-container > div:hover {
+    flex-basis: 23vw;
+}
+
+.theme {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.theme:nth-child(1){
+    background-image: url("../assets/quiz.svg")
+}
+
+.theme:nth-child(2){
+    background-image: url("../assets/geo.svg")
+}
+
+.theme:nth-child(3){
+    background-image: url("../assets/cinema.svg")
+}
+
+.theme:nth-child(4){
+    background-image: url("../assets/nature.svg")
+}
+
+.theme:nth-child(5){
+    background-image: url("../assets/math.svg")
+}
+
+/* RESPONSIVIDADE TABLET*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #themes-container {
+        flex-wrap: wrap;
+    }
+
+    #themes-container > div {
+        flex-basis: 30vw;
+    }
+
+    #themes-container > div:hover {
+        flex-basis: 35vw;
+    }
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media screen and (max-width: 600px) {
+    #themes-container {
+        flex-direction: column;
+    }
+
+    #themes-container > div {
+        width: 80vw;
+        padding: 10px;
+        background-image: unset;
+    }
+
+    #themes-container > div:hover {
+        flex-basis: 85vw;
+    }
+
+    #conhecimentos-gerais:hover{
+        background-image: url("../assets/quiz.svg")
+    }
+    
+    #geografia:hover{
+        background-image: url("../assets/geo.svg")
+    }
+    
+    #entreterimento:hover{
+        background-image: url("../assets/cinema.svg")
+    }
+    
+    #ciencias:hover{
+        background-image: url("../assets/nature.svg")
+    }
+    
+    #matematica:hover{
+        background-image: url("../assets/math.svg")
+    }
+}

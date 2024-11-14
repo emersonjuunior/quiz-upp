@@ -1,0 +1,38 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E03616;
+    height: 250px;
+    width: 500px;
+    margin: 10% auto 0 auto;
+    border-radius: 5px;
+    position: relative;
+    background: rgba(37,54,161, 0.3); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    margin-bottom: 10px; 
+}
+
+#home span {
+    color: #FF0072;
+}
+
+/* RESPONSIVIDADE TABLET*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #home {
+        margin-top: 18%;
+      }
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media screen and (max-width: 600px) {
+  #home {
+    width: 90vw;
+    margin-top: 20%;
+  }
+}
